@@ -1,0 +1,37 @@
+install package.   json:npm init -y  
+install typescript:           npm instal --save-dev typescript
+initialise typescript compiler:    npx tsc --init  
+compile typescript to javascript before running:      npx tsc  
+running the compiled javascript code:       node server.js 
+
+
+installing nodemon:      npm i --save-dev nodemon
+typescript dependency for nodemon:      npm install -D ts-node
+copiling and running typescript:    npx nodemon src/server.ts
+on package.json:in the script,:             "start":"nodemon src/server.ts"
+install:      npm i -D eslint
+install:        npx eslint --init
+
+FILL THE QUESTIONS AS FOLLOWS BELOW:
+√ What do you want to lint? · javascript
+√ How would you like to use ESLint? · problems
+√ What type of modules does your project use? · esm
+√ Which framework does your project use? · none
+? Does your project use TypeScript? » Yes
+√ Where does your code run? · node 
+ Which language do you want your configuration file be written in? · javascript
+  Would you like to install them now? »  Yes
+  Which package manager do you want to use? npm
+
+
+  add a .gitignore file at the same level as the src file
+
+  use this address to get a list of ignoreable files from github itself
+  https://github.com/github/gitignore/blob/main/Node.gitignore
+
+
+
+
+
+  SETTING UP MONGODB AND THE DATABASE
+  mongodb+srv://samuelokolie:@1#Cybershooter@mern-blog.tw5uvwx.mongodb.net/?retryWrites=true&w=majority&appName=MERN-blog
