@@ -35,3 +35,9 @@ FILL THE QUESTIONS AS FOLLOWS BELOW:
 
   SETTING UP MONGODB AND THE DATABASE
   mongodb+srv://samuelokolie:@1#Cybershooter@mern-blog.tw5uvwx.mongodb.net/?retryWrites=true&w=majority&appName=MERN-blog
+
+
+
+DEFINING THE SCHEMA FOR THE DATABASE
+Database has collections(these are the different schemas made to categorise user data.)
+

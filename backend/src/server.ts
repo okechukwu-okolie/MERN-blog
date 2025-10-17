@@ -1,14 +1,12 @@
-import "dotenv/config";
+import app from './app.ts'
+import env from './util/validateEnv.js'
 import mongoose from "mongoose";
 
-import express from "express";
-const app = express();
-const port = process.env.port||5500
 
-app.get("/", (req, res) => {
-  res.send("Hello, World!!");
-});
-const MONGO_URI: string | undefined = process.env.MONGO_ACCESS;
+const port = env.PORT||5500
+
+
+const MONGO_URI: string | undefined = env.MONGO_ACCESS;
 
 mongoose.connect(MONGO_URI)
 .then(() => {
@@ -18,5 +16,5 @@ mongoose.connect(MONGO_URI)
     app.listen(port, () => {
         console.log(`Server is running at port: ${port}`);
     });
-})
-.catch(console.error)
+  })
+  .catch(console.error)
